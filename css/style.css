@@ -1,0 +1,36 @@
+/* position blocks */
+header {
+   position: fixed;
+   float: left;
+   background-color: lightblue;
+   height:  55px;
+   width: 100%;
+   z-index: 4;
+   margin-top:   -10px;
+ }
+
+section  {
+  position: relative;
+  top: 45px;
+  width: 65%;
+  height:  1000px;
+  float: left;
+  background-color: pink;
+  }
+
+aside  {
+  position: relative;
+  float: left;
+  top: 45px;
+  width: 35%;
+  height:  1000px;
+  background-color: yellow;
+  }
+
+footer  {
+  position: relative;
+  height:  150px;
+  width: 100%;
+  float: left;
+  background-color: lightgreen;
+  }
