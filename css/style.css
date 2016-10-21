@@ -2,13 +2,46 @@
 header {
    position: fixed;
    float: left;
-   background-color: lightblue;
+
    height:  70px;
    width: 100%;
    z-index: 4;
    margin-top:   -10px;
   /* border: 1px solid #000; */
  }
+
+.search {
+  text-align: left;
+  height: 30px;
+}
+
+.search button, input {
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgrey;
+  background-color: white;
+
+}
+
+.search button{
+height: 30px;
+width: 50px;
+margin-left: -7px;
+background-color:#F7F3F3;
+}
+
+.search input{
+height: 26px;
+}
+
+.search button:hover {
+background-color:#D5C8C8;
+}
+
+
+
+
 
  table, th, td {
   /*    border: 1px solid black; */
@@ -35,64 +68,6 @@ th#c {
     width: 50%;
 }
 
-#search {
-  /* устанавливаем ширину формы,
-  ** равную ширине поля ввода (183 + 37 + 15)	*/
-  width: 235px;
-  height: 29px;
-}
-
-/* делаем инпуты плавающими, чтобы убрать лишние отступы,
-** и отключаем бордюры */
-#search input {
-  float: left;
-  border: none;
-}
-
-/* стили для поля ввода */
-#search .input {
-  width: 183px;
-  height: 28px;
-  /* внутренний отступ справа (37px) делаем больше левого,
-  ** т.к. там будет размещена кнопка отправки	*/
-  padding: 0 37px 1px 15px;
-  background: #EEE url(https://lh4.googleusercontent.com/-EllJnywnmlY/UAaKJYSYYMI/AAAAAAAABUU/IaRo-yUcRmc/s235/search.png) no-repeat;
-  color: #555;
-  font: 13px/28px Tahoma, Arial, sans-serif;
-  outline: none;
-}
-
-/* приходится использовать хак для FireFox
-** для вертикального выравнивания текста,
-** т.к. у него свои особые представления об этом */
-@-moz-document url-prefix() {
-  #search .input {
-    height: 27px;
-    padding-bottom: 2px;
-  }
-}
-
-/* меняем оформление поля ввода при фокусе */
-#search .input:focus {
-  background-color: #E8E8E8;
-  background-position: 0 -29px;
-  color: #333;
-}
-
-/* оформляем кнопку отправки */
-#search .submit {
-  width: 37px;
-  height: 29px;
-  cursor: pointer;
-
-  /* смещаем кнопку влево на собственную ширину,
-  ** чтобы она оказалась над полем ввода */
-  margin-left: -37px;
-
-  /* по-нормальному, здесь достаточно было бы указать background: none;
-  ** но приходится указывать фон из-за бага в IE */
-  background: url(dontexist.png);
-}
 
 section  {
   position: relative;
