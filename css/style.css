@@ -2,7 +2,7 @@
 header {
    position: fixed;
    float: left;
-
+   background-color: white;
    height:  70px;
    width: 100%;
    z-index: 4;
@@ -10,9 +10,56 @@ header {
   /* border: 1px solid #000; */
  }
 
+
+ /* navigation panel as table  */
+
+  table, th, td {
+     border: 1px solid black;
+      border-collapse: collapse;
+  }
+
+  table {
+     width: 100%;
+ }
+
+ th {
+     height: 68px;
+ }
+ th#a {
+     width: 10%;
+     text-align: right;
+ }
+
+ th#b {
+     width: 10%;
+ }
+
+ th#c {
+     width: 50%;
+ }
+
+th#d {
+  width: 14%;
+
+}
+
+th#e {
+    text-align: left;
+}
+
+
+
+ /* search block */
+
 .search {
   text-align: left;
   height: 30px;
+}
+
+/* text fild and btn*/
+
+.search input{
+  height: 26px;
 }
 
 .search button, input {
@@ -21,52 +68,42 @@ header {
   border-width: 1px;
   border-color: lightgrey;
   background-color: white;
-
 }
 
-.search button{
+#search-btn {
 height: 30px;
 width: 50px;
 margin-left: -7px;
 background-color:#F7F3F3;
 }
 
-.search input{
-height: 26px;
+/* add video btn */
+
+#add-video-btn {
+  height: 30px;
+  font-size: 12px;
+  background-color:#F7F3F3;
+  float:right;
 }
 
-.search button:hover {
+/* profil btn */
+
+#profil-btn button {
+  border-style: none;
+}
+
+#profil-btn img {
+  height: 30px;
+  border-radius: 50%;
+}
+
+/* color for cursor hover btns */
+
+.search #add-video-btn:hover, #search-btn:hover {
 background-color:#D5C8C8;
 }
 
 
-
-
-
- table, th, td {
-  /*    border: 1px solid black; */
-     border-collapse: collapse;
- }
-
- table {
-    width: 100%;
-}
-
-th {
-    height: 68px;
-}
-th#a {
-    width: 10%;
-    text-align: right;
-}
-
-th#b {
-    width: 10%;
-}
-
-th#c {
-    width: 50%;
-}
 
 
 section  {

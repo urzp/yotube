@@ -13,14 +13,26 @@
          <th id = "b"><img src="img/YouTube-logo.png" alt="logo" height="70" align="middle"></th>
          <th id = "c">
            <form action="" method="post"  class="search">
-             <input type="text"  size="35"  name="" value="" height="30" onblur="if(this.value=='') this.value='Ввидите запрос';" onfocus="if(this.value=='Ввидите запрос') this.value='';" class="input" />
-             <button type="submit" >
+             <input type="text"  size="35"  name="" value="Ввидите запрос" height="30" onblur="if(this.value=='') this.value='Ввидите запрос';" onfocus="if(this.value=='Ввидите запрос') this.value='';" class="input" />
+             <button type="submit" id="search-btn">
                <img src="img/search.png"  alt="search" height="10" >
              </button>
            </form>
          </th>
-         <th></th>
-         <th>5</th>
+         <th id = "d">
+           <div>
+            <form action="" method="post"  class="search">
+              <button id="add-video-btn">Добавить видео</button>
+            </form>
+          </div>
+         </th>
+         <th id = "e">
+            <form action="" method="post"  class="search" id="profil-btn" >
+              <button>
+                <img src="img/photo.jpg"  alt="photo" height="50" >
+              </button>
+            </form>
+         </th>
        </tr>
     </table>
 
