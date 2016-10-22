@@ -14,7 +14,7 @@ header {
  /* navigation panel as table  */
 
   table, th, td {
-     border: 1px solid black;
+    /*  border: 1px solid black; */
       border-collapse: collapse;
   }
 
@@ -109,17 +109,28 @@ background-color:#D5C8C8;
 section  {
   position: relative;
   top: 55px;
-  width: 65%;
+  width: 70%;
   height:  1000px;
   float: left;
-  background-color: pink;
+  background-color:#E7E4E4;
+  }
+
+  article {
+    margin: 20px 10px 10px 20px;
+
+  }
+
+  #main-video {
+    width: 100%;
+    height: 35em;
+
   }
 
 aside  {
   position: relative;
   float: left;
   top: 55px;
-  width: 35%;
+  width: 30%;
   height:  1000px;
   background-color: yellow;
   }
