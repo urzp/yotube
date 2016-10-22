@@ -132,8 +132,27 @@ aside  {
   top: 55px;
   width: 30%;
   height:  1000px;
-  background-color: yellow;
+  background-color: #E7E4E4;
   }
+
+aside ul {
+  background-color: white;
+  list-style-type: none;
+  margin-top: 20px;
+  padding-bottom:    40px;
+  width: 90%;
+}
+
+aside li {
+  font-size: 12;
+  margin-left: -20px;
+  margin-bottom: 10px;
+  padding:   5px;
+}
+
+aside img {
+
+}
 
 footer  {
   position: relative;
